@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven – Book Registration & Order Form</title>
+</head>
+<body>
+
+    <h1>Readers' Haven – Book Registration & Order Form</h1>
+    <p>Please register your details and place your book order by providing personal information, book preferences, payment details, delivery instructions, and additional information.</p>
+
+    <!-- Task 1: Form tag with action and target attributes -->
+    <form action="submit_order.php" method="POST" target="_blank">
+
+        <!-- Task 2 & 3: Customer fields with appropriate types and placeholder text -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="customerName">Customer Name:</label><br>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required><br><br>
+
+            <label for="emailAddress">Email Address:</label><br>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="example@domain.com" required><br><br>
+
+            <label for="mobileNumber">Mobile Number:</label><br>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="10-digit mobile number" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Task 4 & 5 & 6: Delivery Date/Time, Book Category, Book Title, and Quantity -->
+        <fieldset>
+            <legend>Book Preferences & Delivery Details</legend>
+
+            <label for="favoriteCategory">Favorite Book Category:</label><br>
+            <select id="favoriteCategory" name="favoriteCategory" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Children's Books">Children's Books</option>
+            </select><br><br>
+
+            <label for="bookTitle">Book Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title"><br><br>
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+
+            <label for="deliveryDate">Delivery Date:</label><br>
+            <input type="date" id="deliveryDate" name="deliveryDate"><br><br>
+
+            <label for="preferredTime">Preferred Delivery Time:</label><br>
+            <input type="time" id="preferredTime" name="preferredTime"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Task 7 & 8: Preferred Payment Method & Additional Services -->
+        <fieldset>
+            <legend>Payment & Additional Services</legend>
+
+            <label>Preferred Payment Method:</label><br>
+            <input type="radio" id="cashOnDelivery" name="paymentMethod" value="Cash on Delivery" required>
+            <label for="cashOnDelivery">Cash on Delivery</label><br>
+            <input type="radio" id="onlinePayment" name="paymentMethod" value="Online Payment">
+            <label for="onlinePayment">Online Payment</label><br><br>
+
+            <label>Additional Services:</label><br>
+            <input type="checkbox" id="giftWrapping" name="additionalServices[]" value="Gift Wrapping">
+            <label for="giftWrapping">Gift Wrapping</label><br>
+            <input type="checkbox" id="bookmark" name="additionalServices[]" value="Bookmark">
+            <label for="bookmark">Bookmark</label><br>
+            <input type="checkbox" id="expressDelivery" name="additionalServices[]" value="Express Delivery">
+            <label for="expressDelivery">Express Delivery</label><br>
+            <input type="checkbox" id="greetingCard" name="additionalServices[]" value="Greeting Card">
+            <label for="greetingCard">Greeting Card</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Task 9, 10 & 11: Hidden field, file upload, textareas -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <!-- Task 9: Hidden input field -->
+            <input type="hidden" name="orderSource" value="Readers Haven Book Order">
+
+            <!-- Task 10: File upload field with accept attribute -->
+            <label for="referenceFile">Upload Reference Image/Document:</label><br>
+            <input type="file" id="referenceFile" name="referenceFile" accept="image/*,.pdf,.doc,.docx"><br><br>
+
+            <!-- Task 11: Delivery Address and Special Instructions using textarea -->
+            <label for="deliveryAddress">Delivery Address:</label><br>
+            <textarea id="deliveryAddress" name="deliveryAddress" rows="4" cols="40" placeholder="Enter your full shipping address..."></textarea><br><br>
+
+            <label for="specialInstructions">Special Instructions:</label><br>
+            <textarea id="specialInstructions" name="specialInstructions" rows="3" cols="40" placeholder="Any special requests..."></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Task 12: Submit and Reset controls using the <button> element -->
+        <button type="submit">Submit Order</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>

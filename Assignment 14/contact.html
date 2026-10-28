@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; color: #333; }
+        h2 { color: #0066cc; }
+        .info { margin-bottom: 20px; line-height: 1.6; }
+        form { background: #f9f9f9; padding: 20px; border: 1px solid #ddd; max-width: 400px; }
+        input, textarea { width: 100%; padding: 8px; margin: 10px 0 20px 0; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background-color: #0066cc; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: #004499; }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <div class="info">
+        <strong>Address:</strong> 123 Tech Campus Road, Education Hub, City - 560001<br>
+        <strong>Email:</strong> admissions@abccollege.edu<br>
+        <strong>Phone:</strong> +1 (555) 019-2834
+    </div>
+
+    <h3>Send us a Message</h3>
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="msg" rows="4" required></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+    </form>
+</body>
+</html>

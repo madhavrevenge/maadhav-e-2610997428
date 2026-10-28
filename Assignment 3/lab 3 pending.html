@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant Menu</title>
+    <style>
+        body {
+            /* Beautiful food-related background image */
+            background-image: url('https://images.unsplash.com/photo-1495195134817-a169d0dc9b2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu-container {
+            /* A semi-transparent white box to make the text readable against the background */
+            background-color: rgba(255, 255, 255, 0.92);
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h1, h2 {
+            color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            border-bottom: 2px solid #b33939;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>My Restaurant Menu</h1>
+
+        <!-- Introduction Paragraph -->
+        <h2>About Us</h2>
+        <p>Welcome to Arshpreet Restaurant,<strong>The cottage</strong>, where tradition meets modern gastronomy. We pride ourselves on sourcing the freshest local ingredients to craft mouth-watering dishes that will delight your senses. Whether you are craving a light, refreshing appetizer or a hearty, comforting main course, our passionate chefs have curated a menu that promises an unforgettable dining experience in a warm, inviting atmosphere.</p>
+
+        <!-- Nested List for Categories -->
+        <h2>Menu Categories</h2>
+        <ul>
+            <li><strong>Vegetarian Delights</strong>
+                <ul>
+                    <li>Farm Fresh Salads</li>
+                    <li>Plant-based Entrees</li>
+                    <li>Eggless Desserts</li>
+                </ul>
+            </li>
+            <li><strong>Non-Vegetarian Specials</strong>
+                <ul>
+                    <li>Grilled Seafood</li>
+                    <li>Prime Cut Steaks</li>
+                    <li>Poultry & Poultry Roasts</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Unordered List for Starters -->
+        <h2>Starters</h2>
+        <ul>
+            <li>Crispy Garlic Bruschetta</li>
+            <li>Stuffed Mushrooms with Cream Cheese</li>
+            <li>Spicy Buffalo Chicken Wings</li>
+            <li>Roasted Tomato & Basil Soup</li>
+            <li>Golden Fried Calamari Rings</li>
+        </ul>
+
+        <!-- Ordered List for Main Course -->
+        <h2>Main Course</h2>
+        <ol>
+            <li>Truffle Mushroom Risotto topped with Parmesan</li>
+            <li>Herb-Crusted Grilled Salmon with Asparagus</li>
+            <li>Wood-Fired Margherita Pizza with Fresh Basil</li>
+            <li>Slow-Cooked BBQ Beef Ribs with Mashed Potatoes</li>
+            <li>Spicy Thai Green Curry with Jasmine Rice</li>
+        </ol>
+
+        <!-- 5 Images -->
+        <h2>Our Dishes</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Healthy Bowl">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Delicious Pizza">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Gourmet Salmon">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pasta Dish">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Steak and Veggies">
+        </div>
+    </div>
+
+</body>
+</html>
